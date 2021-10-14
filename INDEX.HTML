@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="STYLE.CSS">
+</head>
+<body>
+   <!---------------------------------------Header---------------------------------- -->
+   <header class="flex">
+    <a href="#">
+        <img src="images/logo.png" alt="typo-insta">
+    </a>
+    
+    <nav class="flex">
+        <input type="search" name="recherche" id="recherche">
+        <button type="submit" class=" flex btn">
+            <img src="images/header-icone-ajout (3).png" alt="icone ajout"> Ajouter photo</button>
+    </nav>
+</header>
+
+<!--------------------------------------MAIN------------------------------------->
+<main>
+    <section id="bloc-gauche">
+        <div class="profil-img flex">
+            <img src="images/admin.png" alt="icone de profil">
+        </div>
+
+        <div class="profil-info">
+            <h3>Jean Robinet
+                <span>@jean_lebarbu</span>
+            </h3> <!-- on peut aussi utiliser une div avec un h3 et un h4, ou alors mettre la span en dessous du h3 -->
+            
+            <p>Salut, je m’appelle Jean et<br/>j’adore capturer le monde tel<br/>qu’il est. Je suis designer freelance basé à Paris.</p>
+
+            <div class="profil-chiffres flex">
+                <h4>20K<span>abonnés</span></h4>
+                <h4>432<span>abonnements</span></h4>
+                <h4>11K<span>notifs</span></h4>
+            </div>
+        </div>
+    </section>
+
+<!------------------------------------PAGE D'ACCUEIL------------------------------------>
+    <section id="bloc-droit">
+        <div class="bienvenue flex column">
+            <h1>Bienvenue</h1>
+            <span>@jean_lebarbu</span>
+        </div>
+
+        <div class="stories">
+            <h2>Stories</h2>
+
+                <div class="stories-gallerie flex">
+                    <a href="#">
+                        <img src="images/stories-icone-1.png" alt="@bobo_poils">
+                    </a>
+                    <a href="#">
+                        <img src="images/stories-icone-2.png" alt="@Cheveululu">
+                    </a>
+                    <a href="#">
+                        <img src="images/stories-icone-3.png" alt="@lulunettes">
+                    </a>
+                    <a href="#">
+                        <img src="images/stories-icone-4.png" alt="@barbapapa">
+                    </a>
+                    <a href="#">
+                        <img src="images/stories-icone-5.png" alt="@inconnuauxbattaillons">
+                    </a>
+                </div>
+        </div>
+
+        <div class="actualités">
+            <h2>Actualités</h2>
+
+                <div class="actualite-gallerie">
+
+                    <div class="a1">
+                        <a href="#">
+                        <img src="images/carte1.png" alt=""></a>
+                        <div class="actualite-profil flex">
+                            <a href="#">
+                            <img src="images/stories-icone-1.png" alt=""></a>
+                            <span>@bobo_poils</span>
+                        </div>
+                    </div>
+
+                    <div class="a2">
+                        <a href="#">
+                        <img src="images/carte2.png" alt=""></a>
+                        <div class="actualite-profil flex">
+                            <a href="#">
+                            <img src="images/stories-icone-2.png" alt=""></a>
+                            <span>@Cheveululu</span>
+                        </div>
+                    </div>
+
+                    <div class="a3" >
+                        <a href="#">
+                        <img src="images/carte3.png" alt=""></a>
+                        <div class="actualite-profil flex">
+                            <a href="#">
+                            <img src="images/stories-icone-3.png" alt=""></a>
+                            <span>@lulunettes</span>
+                        </div>
+                    </div>
+
+                    <div class="a4">
+                        <a href="#">
+                        <img src="images/carte4.png" alt=""></a>
+                        <div class="actualite-profil flex">
+                            <a href="#">
+                            <img src="images/stories-icone-4.png" alt=""></a>
+                            <span>@barbapapa</span>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+    </section>
+</main>
+</body>
+</html>

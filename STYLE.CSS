@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background: #f6f8fa;
+    font-family: 'roboto' sans -serif;
+    color:#1e2a37;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+header, main{
+    width: 1196px, 90%;
+    margin: auto;
+}
+main, .actualite-gallerie{
+    display: grid;
+
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.column{
+    flex-direction: column;
+}
+img{
+    display:block;
+    max-width: 100%;
+}
+h2{
+    margin-bottom: 20px;
+    font-size: clamp(24px,8vw, 30px);
+}
+/* header */
+header{
+    margin:34px auto 50px;
+}
+nav{
+    gap:15px
+}
+input{
+    width: 105px;
+    height: 61px;
+    background:url('images/loupe.png') no-repeat 80% center/ 20%, #dbe5ee;
+    border-radius: 31px;
+    border: none;
+}
+.btn{
+    width: 167px;
+    height: 61px;
+    background: linear-gradient(220.96deg, #8c3aaa 9.21%, #db3b75 49.47%,#F28F3D 91.44%);
+    border-radius: 12px;
+    border: none;
+    font-weight:bold;
+    font-size: 18px;
+    color:#ffffff;
+    justify-content: center !important;
+    gap: 13px;
+}
+/* main */
+main{
+grid-template-columns: 275px 1fr;
+grid-gap: 50px;
+margin-bottom: 60px;
+}
+
+/* bloc gauche */
+
+.profil-img{
+    height: 300px;
+    background: url('images/imagleft.png') no-repeat center / cover;
+    justify-content:flex-end;
+    align-items: flex-end;
+    padding: 13px;
+}
+.profil-info{
+    background: #fff;
+    padding: 8px 22px 35px;
+    border-radius: 0 0 20px 20px;
+    text-align: center;
+
+}
+.profil-info span{
+    font-size: 16px;
+    font-weight: 300;
+    display: block;
+}
+.profil-info p{
+    text-align: left;
+    margin: 30px 0;
+}
+/* bloc droit */
+
+.bienvenue{
+    height: 300px;
+    background: url('images/accueil.png') no-repeat center /cover;
+    justify-content: center;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+
+}
+.bienvenue h1{
+    font-size: clamp(40px, 10vw,90px);
+}
+.bienvenue span{
+    font-size: clamp(30px, 8vw, 60px );
+}
+/* stories */
+
+.stories{
+    margin: 50px 0;
+}
+.stories-gallerie{
+    gap:25px
+}
+/* actualite */
+
+.actualite-gallerie {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:26px;
+    grid-template-areas:
+    "a1 a2 a3" 
+    "a4 a4 a3";
+}
+.a1{
+    grid-area: a1;
+}
+.a2{
+    grid-area: a2;
+}
+.a3{
+    grid-area: a3;
+}
+.a4{
+    grid-area: a4;
+}
+.actualite-profil{
+    margin-top:10px;
+    justify-content: flex-start;
+    gap:7px;
+}
+.column{
+    flex-direction: column;
+}
+
+
+a{
+    text-decoration: none;
+    color: #1e2a37;
+}
+@media(max-width: 1140px){
+    
+    header{
+        position: absolute;
+       width: 414px;
+       height: 91px;
+       left: 0px;
+       top: 0px
+    }
+    #bloc-gauche{
+        position: absolute;
+        width: 374px;
+        height: 570px;
+        top: 141px;
+        
+    }
+    .bienvenue{
+        position: absolute;
+        width: 374px;
+        height: 153px;
+        bottom:-300px;
+    }
+    .stories{
+        position: absolute;
+        width: 374px;
+        height: 146px;
+       bottom:-230px;
+    }
+    .actualités{
+        position: absolute;
+         top: 1000px;
+        bottom: 200px;
+        padding: 30px;
+    }
+       .a1{
+        position: absolute;
+        width: 374px;
+        top: 100px;
+       
+        
+
+       }
+       .a2{
+        position: absolute;
+        width: 374px;
+        height: 484px; 
+       
+        top:600px;
+        
+       }
+       .a3{
+        position: absolute;
+        width: 374px;
+        height: 484px;
+       
+        top: 1100px;
+       }
+       .a4{
+        position: absolute;
+        width: 374px;
+        height: 484px;
+       
+        top: 2000px;
+        
+       }
+ 
+
+}
+
